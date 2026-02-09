@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 3.16)
-project (CmakeSetup)
+project (AtomBox)
 
 
 set(CMAKE_INTERPROCEDURAL_OPTIMIZATION_RELEASE ON)
@@ -78,7 +78,7 @@ target_include_directories(stb INTERFACE libs/stb)
 
 # Reconfigure your project after changing these options
 option(PRODUCTION_BUILD "Make this a production build" False)
-option(USE_OPENGL "Use OpenGL instead of SDL Renderer" False)
+option(USE_OPENGL "Use OpenGL instead of SDL Renderer" True)
 
 
 # Get all .c, .h .cpp and .hpp files

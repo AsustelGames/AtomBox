@@ -1,0 +1,4 @@
+In this file i write down issues that i find with my CmakeSetup
+
+extra space and enet is not required in nix-shell in build_commands.txt
+i can remove how to build with make in how to build section and write required tools to build CmakeSetup in README.md
