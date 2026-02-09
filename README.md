@@ -19,21 +19,17 @@
   - stb_trutype
 
 ## How To Build
-Make sure you have everything required installed
-> If you are using **NixOS** run `nix-shell -p gnumake cmake ninja pkg-config sdl3` before building
-### Using Ninja
-#### cd into your project
+Make sure you have everything **Ninja** and **Cmake** installed
+> If you are using **NixOS** run `nix-shell -p gnumake cmake ninja pkg-config sdl3` before building AtomBox
+#### cd into AtomBox
 ```
-cd /path/to/your/project
+cd /path/to/AtomBox
 ```
-#### Configure your project 
-This will create the build directory
+#### Configure AtomBox
 ```
 cmake -G Ninja -S . -B build
 ```
-#### Build your project
-This will cd into your build directory then it will run the build command in this case it's **Ninja** and create the executable, after that it will cd back to your project directory
-> It can also be used to rebuild your project if you made any changes
+#### Build AtomBox
 ```
 cd build
 ninja
@@ -43,4 +39,4 @@ or
 ```
 cd build && ninja && cd ..
 ```
-Now run your project
+Now run AtomBox
